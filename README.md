@@ -60,7 +60,7 @@ jobs:
 
 Second create your deploy workflow (or something else) `.github/workflows/deploy.yml` here you'll define your deploy script, and this script will use the environments defined in main.yml
 
-````yaml
+```yaml
 name: Deployment
 
 
@@ -97,7 +97,6 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         with:
           args: --acl public-read --follow-symlinks --delete
-
 ```
 
 That's how you use Environment Secrets in Github Actions! There is nothing about that in the github actions docs
