@@ -58,7 +58,7 @@ jobs:
       AWS_REGION: ${{ secrets.AWS_REGION }}
 ```
 
-Second create your deploy workflow (or something else) `.github/workflows/deploy.yml` here you'll define your deploy script, and this script will use the environments defined in main.yml
+Second create your deploy workflow (or something else) `.github/workflows/deploy.yml` here you'll define your deploy script, and this script will use the environments defined in main.yml. I'm using a simple s3 aws deploy
 
 ```yaml
 name: Deployment
